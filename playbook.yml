@@ -2,8 +2,8 @@
 - name: "Assuming AWX role"
   hosts: 127.0.0.1
   connection: local
-  vars_files:
-    - "./vars/all.yml"
+  #vars_files:
+    #- "./vars/all.yml"
   tasks:
     - name: Echo printenv
       ansible.builtin.shell: printenv
